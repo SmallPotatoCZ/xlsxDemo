@@ -1,0 +1,10 @@
+{
+  "name": "xlsx-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "xlsx": "^0.14.0",
+    "xlsx-style": "^0.8.13"
+  }
+}

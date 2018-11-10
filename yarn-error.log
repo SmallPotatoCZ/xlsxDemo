@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.10.1/libexec/bin/yarn.js init
+
+PATH: 
+  /Users/zhangchao/zhangChaoProjects/Flutter/flutter/bin:/opt/local/bin:/opt/local/sbin:/Users/zhangchao/.jenv/shims:/Users/zhangchao/.jenv/bin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/Users/zhangchao/android/sdk/platform-tools:/Users/zhangchao/android/sdk/build-tools/25.0.2:/Users/zhangchao/android/sdk/emulator:/Users/zhangchao/android/sdk/tools:/Users/zhangchao/android/sdk/platform-tools:/Users/zhangchao/android/sdk/tools/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:116426:13)
+      at emitNone (events.js:106:13)
+      at Interface.emit (events.js:208:7)
+      at Interface._ttyWrite (readline.js:775:16)
+      at ReadStream.onkeypress (readline.js:160:10)
+      at emitTwo (events.js:126:13)
+      at ReadStream.emit (events.js:214:7)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1011:36)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
