@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server/main2.js"
+  },
   "dependencies": {
-    "xlsx": "^0.14.0",
+    "xlsx": "^0.14.1",
+    "xlsx-populate": "^1.17.0",
     "xlsx-style": "^0.8.13"
   }
 }

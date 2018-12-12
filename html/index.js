@@ -88,7 +88,7 @@ function generateWS(sheets) {
     let _name = getCharCol(index)
     scolNames[value] = {
       name: _name,
-      mw: 5
+      mw: value.length * 2
     };
     tmpdata[_name + 1] = {
       v: value
@@ -97,7 +97,15 @@ function generateWS(sheets) {
   sheets.forEach((_v, _i) => {
     for (var key in _v) {
       tmpdata[scolNames[key].name + (_i + 2)] = {
-        v: _v[key]
+        v: _v[key],
+        s: {
+          bgColor: {
+            indexed: 64
+          },
+          alignment: {
+            wrapText: true
+          }
+        }
       };
       if (_v[key].length * 2 > scolNames[key].mw) {
         scolNames[key].mw = _v[key].length * 2;
@@ -138,8 +146,9 @@ function s2ab(s) {
 function download() {
   let tmpDown = new Blob([s2ab(XLSX.write(generateWB(json), {
     bookType: 'xlsx',
-    bookSST: false,
-    type: 'binary'
+    type: 'binary',
+    bookSST: true,
+    cellStyles: true
   }))], {
     type: ""
   });
